@@ -1,11 +1,13 @@
 import sys
-from PIL import Image
+from tkinter import Image
 from PyQt6.QtWidgets import (
     QApplication, QMainWindow, QPushButton, QLabel, QFileDialog, QVBoxLayout, QWidget, QStatusBar, QMessageBox, QProgressBar
 )
 from PyQt6.QtGui import QIcon
 from PyQt6.QtCore import Qt
 import fitz
+from app.pdf_converter import convert_pdf_to_images
+from app.translation_thread import TranslationThread
 import os
 import zipfile
 
