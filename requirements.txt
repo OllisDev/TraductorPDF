@@ -1,6 +1,0 @@
-PyQt6
-pytesseract
-PyMuPDF
-Pillow
-deep-translator
-opencv-python-headless
