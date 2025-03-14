@@ -18,7 +18,8 @@ def create_zip(images):
             zip_file.writestr(f"page_{i+1}.jpg", img_bytes.getvalue())
     zip_buffer.seek(0)
     return zip_buffer
- 
+
+st.set_page_config(page_title= "Traductor de documentos en Chino", page_icon= "C:/hlocal/TraductorPDF/resources/logo_valle_del_miro.ico")
 st.title("Traductor de documentos en Chino")
 uploaded_file = st.file_uploader("Sube un archivo PDF", type=["pdf"])
 if uploaded_file:
