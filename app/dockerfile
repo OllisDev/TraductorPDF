@@ -16,7 +16,7 @@ RUN pip install pdf2image
 # Instala Poppler (necesario para pdf2image)
 RUN apt-get update && apt-get install -y poppler-utils
 
-# Copia el resto de los archivos de la aplicación al contenedor
+# Copia el resto de los archivos de la aplicación y la carpeta 'resources' al contenedor
 COPY . .
 
 # Expone el puerto donde se ejecutará Streamlit
